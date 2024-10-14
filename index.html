@@ -2,812 +2,265 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Book Store Website</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Free Book | Online Book Store Website</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.0.7/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+ 
+
+    <style>
+        .header{
+    width: 100%;
+    min-height: 120vh;
+    background-image: url(./images/background/bg-1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 120px; 
+
+}
+    </style>
+
 </head>
 <body>
-    
-    <section>
 
-        <nav>
-
+    <header class="header">
+        <div class="main-header">
             <div class="logo">
-                <img src="image/logo.png">
+                <img src="./images/logo/black.jpeg" alt="PageTurner Logo">
             </div>
+            <nav class="navbar">
+                <a href="./index.html">Home</a>
+                <a href="./about.html">About</a>
+                <a href="./review.html">Reviews</a>
+                <div class="dropdown">
+                    <a href="#" class="dropdown-toggle">eBooks <i class='bx bx-chevron-down'></i></a>
+                    <div class="dropdown-menu">
+                        <a href="./ebooks.html">All eBooks</a>
+                        <a href="#">New Releases</a>
+                        <a href="#">Bestsellers</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a href="#" class="dropdown-toggle">Shop-now <i class='bx bx-chevron-down'></i></a>
+                    <div class="dropdown-menu">
+                        <a href="./shopnow.html">Shop All</a>
+                        <a href="#">Sale Items</a>
+                        <a href="#">New Arrivals</a>
+                    </div>
+                </div>
+                <div class="search-bar">
+                    <input type="text" placeholder="Search...">
+                    <button class="search-btn"><i class='bx bx-search'></i></button>
+                </div>
+                <a href="./login.html" class="login-btn"><i class='bx bx-user'></i> Login</a>
+                <a href="./shopnow.html" class="shopping-cart"><i class='bx bx-cart'></i></a>
+                <i class='bx bx-x' id="close"></i>
+            </nav>
+            <i class='bx bx-menu' id="menuBar" style="color: white;"></i>
 
+        </div>
+        <div class="home">
+            <div class="home-content">
+                <h2>PageTurner</h2>
+                <h4>Your Key to Success</h4>
+                <p>Discover essential strategies and insights with PageTurner. Our guide helps you unlock your potential and achieve your goals effortlessly.</p>
+                <a href="#" class="btn">Learn More</a>
+            </div>
+        </div>
+        
+    </header>
+    
+    
+    
+    
+    <!---- quection section start -->
+    <section class="quection" id="about">
+    <div class="main-topic">
+        <h2>Empower Your Mind</h2>
+    </div>
+    <div class="main-quection">
+        <div class="col-6">
+            <i class='bx bxs-user'></i>
+            <h4>Book Lovers</h4>
+            <p>For anyone who loves to read and explore new ideas.</p>
+        </div>
+        <div class="col-6">
+            <i class='bx bxs-user-detail'></i>
+            <h4>Entrepreneurs</h4>
+            <p>Gain insights and strategies to succeed in business.</p>
+        </div>
+        <div class="col-6">
+            <i class='bx bxs-shopping-bag'></i>
+            <h4>Professionals</h4>
+            <p>Enhance your career with practical advice and tips.</p>
+        </div>
+        <div class="col-6">
+            <i class='bx bx-purchase-tag-alt'></i>
+            <h4>Students</h4>
+            <p>Learn new skills and expand your knowledge base.</p>
+        </div>
+    </div>
+</section>
+
+
+    
+    <!---- selling setion start ------>
+    <div class="sell">
+        <div class="main-selling">
+            <div class="col-1">
+                <span>500+</span>
+                <p>Books and eBooks curated for diverse interests and needs</p>
+            </div>
+            <div class="col-1">
+                <span>120</span>
+                <p>Expert reviews and recommendations from industry professionals</p>
+            </div>
+            <div class="col-1">
+                <span>250,000</span>
+                <p>eBooks downloaded by our readers in the past year</p>
+            </div>
+            <div class="col-1">
+                <span>5</span>
+                <p>Years of dedicated service and growth in the book community</p>
+            </div>
+        </div>
+    </div>
+    
+
+    <!---- book critics setion start ------>
+    <section class="critics">
+        <div class="container">
+            <h3>PageTurner at a Glance</h3>
+            <p>See why PageTurner stands out in the literary world with our:</p>
             <ul>
-                <li><a href="#Home">Home</a></li>
-                <li><a href="#About">About</a></li>
-                <li><a href="#Featured">Featured</a></li>
-                <li><a href="#Arrivals">Arrivals</a></li>
-                <li><a href="#Reviews">Reviews</a></li>
-                <li><a href="#Blog">Blog</a></li>
+                <li>Free Delivery</li>
+                <li>Cash on Delivery</li>
+                <li>Original Products</li>
+                <li>Easy Replacement</li>
             </ul>
-
-            <div class="social_icon">
-                <i class="fa-solid fa-magnifying-glass"></i>
-                <i class="fa-solid fa-heart"></i>
-            </div>
-
-        </nav>
-
-        <div class="main">
-
-            <div class="main_tag">
-                <h1>WELCOME TO<br><span>BOOK STORE</span></h1>
-
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda molestias atque laborum 
-                    non fuga ex deserunt. Exercitationem velit ducimus praesentium, obcaecati hic voluptate id 
-                    tenetur fuga illum quidem omnis? Rerum?
-                </p>
-                <a href="#" class="main_btn">Learn More</a>
-
-            </div>
-
-            <div class="main_img">
-                <img src="image/table.png">
-            </div>
-
+            <br>
+            <p>Discover more about our trusted services and why readers love us.</p>
+            <a href="#"><i class='bx bx-right-arrow-alt'></i>Book Review Daily</a>
         </div>
-
     </section>
-
-
-
-
-    <!--Services-->
-
-    <div class="services">
-
-        <div class="services_box">
-
-            <div class="services_card">
-                <i class="fa-solid fa-truck-fast"></i>
-                <h3>Fast Delivery</h3>
-                <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-                </p>
-            </div>
-
-            <div class="services_card">
-                <i class="fa-solid fa-headset"></i>
-                <h3>24 x 7 Services</h3>
-                <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-                </p>
-            </div>
-
-            <div class="services_card">
-                <i class="fa-solid fa-tag"></i>
-                <h3>Best Deal</h3>
-                <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-                </p>
-            </div>
-
-            <div class="services_card">
-                <i class="fa-solid fa-lock"></i>
-                <h3>Secure Payment</h3>
-                <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-                </p>
-            </div>
-
-        </div>
-
-    </div>
-
-
-
-
-    <!--About-->
-
-    <div class="about">
-
-        <div class="about_image">
-            <img src="image/about.png">
-        </div>
-        <div class="about_tag">
-            <h1>About Us</h1>
-            <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae cumque atque dolor corporis 
-                architecto. Voluptate expedita molestias maxime officia natus consectetur dolor quisquam illo? 
-                Quis illum nostrum perspiciatis laboriosam perferendis? Lorem ipsum dolor sit amet consectetur 
-                adipisicing elit. Minus ad eius saepe architecto aperiam laboriosam voluptas nobis voluptates 
-                id amet eos repellat corrupti harum consectetur, dolorum dolore blanditiis quam quo.
-            </p>
-            <a href="#" class="about_btn">Learn More</a>
-        </div>
-
-    </div>
-
-
-
-
-
-    <!--Books-->
-
-    <div class="featured_boks">
-
-        <h1>Featured Books</h1>
-
-        <div class="featured_book_box">
-
-            <div class="featured_book_card">
-
-                <div class="featurde_book_img">
-                    <img src="image/book_1.jpg">
-                </div>
-
-                <div class="featurde_book_tag">
-                    <h2>Featured Books</h2>
-                    <p class="writer">John Deo</p>
-                    <div class="categories">Thriller, Horror, Romance</div>
-                    <p class="book_price">$25.50<sub><del>$28.60</del></sub></p>
-                    <a href="#" class="f_btn">Learn More</a>
-                </div>               
-
-            </div>
-
-            <div class="featured_book_card">
-
-                <div class="featurde_book_img">
-                    <img src="image/book_2.jpg">
-                </div>
-
-                <div class="featurde_book_tag">
-                    <h2>Featured Books</h2>
-                    <p class="writer">John Deo</p>
-                    <div class="categories">Thriller, Horror, Romance</div>
-                    <p class="book_price">$25.50<sub><del>$28.60</del></sub></p>
-                    <a href="#" class="f_btn">Learn More</a>
-                </div>               
-
-            </div>
-
-            <div class="featured_book_card">
-
-                <div class="featurde_book_img">
-                    <img src="image/book_3.jpg">
-                </div>
-
-                <div class="featurde_book_tag">
-                    <h2>Featured Books</h2>
-                    <p class="writer">John Deo</p>
-                    <div class="categories">Thriller, Horror, Romance</div>
-                    <p class="book_price">$25.50<sub><del>$28.60</del></sub></p>
-                    <a href="#" class="f_btn">Learn More</a>
-                </div>               
-
-            </div>
-
-            <div class="featured_book_card">
-
-                <div class="featurde_book_img">
-                    <img src="image/book_4.jpg">
-                </div>
-
-                <div class="featurde_book_tag">
-                    <h2>Featured Books</h2>
-                    <p class="writer">John Deo</p>
-                    <div class="categories">Thriller, Horror, Romance</div>
-                    <p class="book_price">$25.50<sub><del>$28.60</del></sub></p>
-                    <a href="#" class="f_btn">Learn More</a>
-                </div>               
-
-            </div>
-
-            <div class="featured_book_card">
-
-                <div class="featurde_book_img">
-                    <img src="image/book_5.jpg">
-                </div>
-
-                <div class="featurde_book_tag">
-                    <h2>Featured Books</h2>
-                    <p class="writer">John Deo</p>
-                    <div class="categories">Thriller, Horror, Romance</div>
-                    <p class="book_price">$25.50<sub><del>$28.60</del></sub></p>
-                    <a href="#" class="f_btn">Learn More</a>
-                </div>               
-
-            </div>
-            
-            <div class="featured_book_card">
-
-                <div class="featurde_book_img">
-                    <img src="image/book_6.jpg">
-                </div>
-
-                <div class="featurde_book_tag">
-                    <h2>Featured Books</h2>
-                    <p class="writer">John Deo</p>
-                    <div class="categories">Thriller, Horror, Romance</div>
-                    <p class="book_price">$25.50<sub><del>$28.60</del></sub></p>
-                    <a href="#" class="f_btn">Learn More</a>
-                </div>               
-
-            </div>
-
-            <div class="featured_book_card">
-
-                <div class="featurde_book_img">
-                    <img src="image/book_7.png">
-                </div>
-
-                <div class="featurde_book_tag">
-                    <h2>Featured Books</h2>
-                    <p class="writer">John Deo</p>
-                    <div class="categories">Thriller, Horror, Romance</div>
-                    <p class="book_price">$25.50<sub><del>$28.60</del></sub></p>
-                    <a href="#" class="f_btn">Learn More</a>
-                </div>               
-
-            </div>
-
-            <div class="featured_book_card">
-
-                <div class="featurde_book_img">
-                    <img src="image/book_8.png">
-                </div>
-
-                <div class="featurde_book_tag">
-                    <h2>Featured Books</h2>
-                    <p class="writer">John Deo</p>
-                    <div class="categories">Thriller, Horror, Romance</div>
-                    <p class="book_price">$25.50<sub><del>$28.60</del></sub></p>
-                    <a href="#" class="f_btn">Learn More</a>
-                </div>               
-
-            </div>
-
-            <div class="featured_book_card">
-
-                <div class="featurde_book_img">
-                    <img src="image/book_9.jpg">
-                </div>
-
-                <div class="featurde_book_tag">
-                    <h2>Featured Books</h2>
-                    <p class="writer">John Deo</p>
-                    <div class="categories">Thriller, Horror, Romance</div>
-                    <p class="book_price">$25.50<sub><del>$28.60</del></sub></p>
-                    <a href="#" class="f_btn">Learn More</a>
-                </div>               
-
-            </div>
-
-            <div class="featured_book_card">
-
-                <div class="featurde_book_img">
-                    <img src="image/book_10.png">
-                </div>
-
-                <div class="featurde_book_tag">
-                    <h2>Featured Books</h2>
-                    <p class="writer">John Deo</p>
-                    <div class="categories">Thriller, Horror, Romance</div>
-                    <p class="book_price">$25.50<sub><del>$28.60</del></sub></p>
-                    <a href="#" class="f_btn">Learn More</a>
-                </div>               
-
-            </div>
-
-            <div class="featured_book_card">
-
-                <div class="featurde_book_img">
-                    <img src="image/book_11.jpg">
-                </div>
-
-                <div class="featurde_book_tag">
-                    <h2>Featured Books</h2>
-                    <p class="writer">John Deo</p>
-                    <div class="categories">Thriller, Horror, Romance</div>
-                    <p class="book_price">$25.50<sub><del>$28.60</del></sub></p>
-                    <a href="#" class="f_btn">Learn More</a>
-                </div>               
-
-            </div>
-
-            <div class="featured_book_card">
-
-                <div class="featurde_book_img">
-                    <img src="image/book_12.png">
-                </div>
-
-                <div class="featurde_book_tag">
-                    <h2>Featured Books</h2>
-                    <p class="writer">John Deo</p>
-                    <div class="categories">Thriller, Horror, Romance</div>
-                    <p class="book_price">$25.50<sub><del>$28.60</del></sub></p>
-                    <a href="#" class="f_btn">Learn More</a>
-                </div>               
-
-            </div>
-
-            <div class="featured_book_card">
-
-                <div class="featurde_book_img">
-                    <img src="image/book_13.png">
-                </div>
-
-                <div class="featurde_book_tag">
-                    <h2>Featured Books</h2>
-                    <p class="writer">John Deo</p>
-                    <div class="categories">Thriller, Horror, Romance</div>
-                    <p class="book_price">$25.50<sub><del>$28.60</del></sub></p>
-                    <a href="#" class="f_btn">Learn More</a>
-                </div>               
-
-            </div>
-
-            <div class="featured_book_card">
-
-                <div class="featurde_book_img">
-                    <img src="image/book_14.png">
-                </div>
-
-                <div class="featurde_book_tag">
-                    <h2>Featured Books</h2>
-                    <p class="writer">John Deo</p>
-                    <div class="categories">Thriller, Horror, Romance</div>
-                    <p class="book_price">$25.50<sub><del>$28.60</del></sub></p>
-                    <a href="#" class="f_btn">Learn More</a>
-                </div>               
-
-            </div>
-
-            <div class="featured_book_card">
-
-                <div class="featurde_book_img">
-                    <img src="image/book_15.png">
-                </div>
-
-                <div class="featurde_book_tag">
-                    <h2>Featured Books</h2>
-                    <p class="writer">John Deo</p>
-                    <div class="categories">Thriller, Horror, Romance</div>
-                    <p class="book_price">$25.50<sub><del>$28.60</del></sub></p>
-                    <a href="#" class="f_btn">Learn More</a>
-                </div>               
-
-            </div>
-
-            
-
-        </div>
-
-    </div>
-
-
-
     
-    <!--Arrivals-->
-
-    <div class="arrivals">
-        <h1>New Arrivals</h1>
-
-        <div class="arrivals_box">
-
-            <div class="arrivals_card">
-                <div class="arrivals_image">
-                    <img src="image/arrival_1.jpg">
-                </div>
-                <div class="arrivals_tag">
-                    <p>New Arrivals</p>
-                    <div class="arrivals_icon">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star-half-stroke"></i>
-                    </div>
-                    <a href="#" class="arrivals_btn">Learn More</a>
-                </div>
-            </div>
-
-            <div class="arrivals_card">
-                <div class="arrivals_image">
-                    <img src="image/arrival_2.jpg">
-                </div>
-                <div class="arrivals_tag">
-                    <p>New Arrivals</p>
-                    <div class="arrivals_icon">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star-half-stroke"></i>
-                    </div>
-                    <a href="#" class="arrivals_btn">Learn More</a>
-                </div>
-            </div>
-
-            <div class="arrivals_card">
-                <div class="arrivals_image">
-                    <img src="image/arrival_3.jpg">
-                </div>
-                <div class="arrivals_tag">
-                    <p>New Arrivals</p>
-                    <div class="arrivals_icon">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star-half-stroke"></i>
-                    </div>
-                    <a href="#" class="arrivals_btn">Learn More</a>
-                </div>
-            </div>
-
-            <div class="arrivals_card">
-                <div class="arrivals_image">
-                    <img src="image/arrival_4.jpg">
-                </div>
-                <div class="arrivals_tag">
-                    <p>New Arrivals</p>
-                    <div class="arrivals_icon">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star-half-stroke"></i>
-                    </div>
-                    <a href="#" class="arrivals_btn">Learn More</a>
-                </div>
-            </div>
-
-            <div class="arrivals_card">
-                <div class="arrivals_image">
-                    <img src="image/arrival_5.jpg">
-                </div>
-                <div class="arrivals_tag">
-                    <p>New Arrivals</p>
-                    <div class="arrivals_icon">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star-half-stroke"></i>
-                    </div>
-                    <a href="#" class="arrivals_btn">Learn More</a>
-                </div>
-            </div>
-
-            <div class="arrivals_card">
-                <div class="arrivals_image">
-                    <img src="image/arrival_6.jpg">
-                </div>
-                <div class="arrivals_tag">
-                    <p>New Arrivals</p>
-                    <div class="arrivals_icon">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star-half-stroke"></i>
-                    </div>
-                    <a href="#" class="arrivals_btn">Learn More</a>
-                </div>
-            </div>
-
-            <div class="arrivals_card">
-                <div class="arrivals_image">
-                    <img src="image/arrival_7.jpg">
-                </div>
-                <div class="arrivals_tag">
-                    <p>New Arrivals</p>
-                    <div class="arrivals_icon">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star-half-stroke"></i>
-                    </div>
-                    <a href="#" class="arrivals_btn">Learn More</a>
-                </div>
-            </div>
-
-            <div class="arrivals_card">
-                <div class="arrivals_image">
-                    <img src="image/arrival_8.webp">
-                </div>
-                <div class="arrivals_tag">
-                    <p>New Arrivals</p>
-                    <div class="arrivals_icon">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star-half-stroke"></i>
-                    </div>
-                    <a href="#" class="arrivals_btn">Learn More</a>
-                </div>
-            </div>
-
-            <div class="arrivals_card">
-                <div class="arrivals_image">
-                    <img src="image/arrival_9.jpg">
-                </div>
-                <div class="arrivals_tag">
-                    <p>New Arrivals</p>
-                    <div class="arrivals_icon">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star-half-stroke"></i>
-                    </div>
-                    <a href="#" class="arrivals_btn">Learn More</a>
-                </div>
-            </div>
-
-            <div class="arrivals_card">
-                <div class="arrivals_image">
-                    <img src="image/arrival_10.jpg">
-                </div>
-                <div class="arrivals_tag">
-                    <p>New Arrivals</p>
-                    <div class="arrivals_icon">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star-half-stroke"></i>
-                    </div>
-                    <a href="#" class="arrivals_btn">Learn More</a>
-                </div>
-            </div>
-
-        </div>
-
-    </div>
-
-
-
-
-
-    <!--reviews-->
-
-    <div class="reviews">
-        <h1>Reviews</h1>
-
-        <div class="review_box">
-
-            <div class="review_card">
-                <i class="fa-solid fa-quote-right"></i>
-                <div class="card_top">
-                    <img src="image/review_1.png">
-                </div>
-                <div class="card">
-                    <h2>John Deo</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus eos doloribus iure 
-                        distinctio! Eos dolorem quam, nisi amet saepe totam, quas quidem laboriosam dolore, 
-                        tenetur itaque nostrum voluptas excepturi aut.
-                    </p>
-                    <div class="review_icon">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star-half-stroke"></i>
-                    </div>
-                </div>
-            </div>
-
-            <div class="review_card">
-                <i class="fa-solid fa-quote-right"></i>
-                <div class="card_top">
-                    <img src="image/review_2.png">
-                </div>
-                <div class="card">
-                    <h2>John Deo</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus eos doloribus iure 
-                        distinctio! Eos dolorem quam, nisi amet saepe totam, quas quidem laboriosam dolore, 
-                        tenetur itaque nostrum voluptas excepturi aut.
-                    </p>
-                    <div class="review_icon">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star-half-stroke"></i>
-                    </div>
-                </div>
-            </div>
-
-            <div class="review_card">
-                <i class="fa-solid fa-quote-right"></i>
-                <div class="card_top">
-                    <img src="image/review_3.png">
-                </div>
-                <div class="card">
-                    <h2>John Deo</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus eos doloribus iure 
-                        distinctio! Eos dolorem quam, nisi amet saepe totam, quas quidem laboriosam dolore, 
-                        tenetur itaque nostrum voluptas excepturi aut.
-                    </p>
-                    <div class="review_icon">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star-half-stroke"></i>
-                    </div>
-                </div>
-            </div>
-
-            <div class="review_card">
-                <i class="fa-solid fa-quote-right"></i>
-                <div class="card_top">
-                    <img src="image/review_4.png">
-                </div>
-                <div class="card">
-                    <h2>John Deo</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus eos doloribus iure 
-                        distinctio! Eos dolorem quam, nisi amet saepe totam, quas quidem laboriosam dolore, 
-                        tenetur itaque nostrum voluptas excepturi aut.
-                    </p>
-                    <div class="review_icon">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star-half-stroke"></i>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-
-    </div>
-
-
-
-    <!--Banner-->
-
-    <div class="banner">
-        <a href="#" class="banner_btn">Learn More</a>
-    </div>
-
-
-
-
-
-    <!--Blog-->
     
-    <div class="blog">
-        <h1>Our Blog</h1>
-        <div class="blog_box">
 
-            <div class="blog_card">
-                <div class="blog_img">
-                    <img src="image/blog_1.jpg">
-                </div>
-                <div class="blog_tag">
-                    <h2>Bloger</h2>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, quos quis quasi ut 
-                        impedit reiciendis voluptatem rem esse ratione omnis, laudantium earum. Aperiam 
-                        nesciunt dolore aliquam repellat consequatur amet ducimus.
-                    </p>
-                    <div class="blog_icon">
-                        <i class="fa-solid fa-calendar-days"></i>
-                        <i class="fa-solid fa-heart"></i>
-                    </div>
-                </div>
-            </div>
-
-            <div class="blog_card">
-                <div class="blog_img">
-                    <img src="image/blog_2.jpg">
-                </div>
-                <div class="blog_tag">
-                    <h2>Bloger</h2>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, quos quis quasi ut 
-                        impedit reiciendis voluptatem rem esse ratione omnis, laudantium earum. Aperiam 
-                        nesciunt dolore aliquam repellat consequatur amet ducimus.
-                    </p>
-                    <div class="blog_icon">
-                        <i class="fa-solid fa-calendar-days"></i>
-                        <i class="fa-solid fa-heart"></i>
-                    </div>
-                </div>
-            </div>
-
-            <div class="blog_card">
-                <div class="blog_img">
-                    <img src="image/blog_3.jpg">
-                </div>
-                <div class="blog_tag">
-                    <h2>Bloger</h2>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, quos quis quasi ut 
-                        impedit reiciendis voluptatem rem esse ratione omnis, laudantium earum. Aperiam 
-                        nesciunt dolore aliquam repellat consequatur amet ducimus.
-                    </p>
-                    <div class="blog_icon">
-                        <i class="fa-solid fa-calendar-days"></i>
-                        <i class="fa-solid fa-heart"></i>
-                    </div>
-                </div>
-            </div>
-
-        </div>
+    <!---------features-------->
+<section class="features">
+    <div class="feature-item">
+        <i class="fas fa-truck-fast"></i> <!-- Updated to 'fa-truck-fast' for a more dynamic truck icon -->
+        <p>Free Delivery</p>
     </div>
-
-
-
-
-
-    <!--Footer-->
-
-    <footer>
-        <div class="footer_main">
-
-            <div class="tag">
-                <img src="image/logo.png">
-                <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est quaerat ipsa aspernatur ad 
-                    sequi, dolore eveniet vitae quasi. Excepturi ipsa odio impedit sequi at hic velit, minus 
-                    vero sint. Voluptas?
-                </p>
-
-            </div>
-
-            <div class="tag">
-                <h1>Quick Link</h1>
-                <a href="#">Home</a>
-                <a href="#">About</a>
-                <a href="#">Featured</a>
-                <a href="#">Arrivals</a>
-                <a href="#">Reviews</a>
-                <a href="#">Blog</a>
-                
-            </div>
-
-            <div class="tag">
-                <h1>Contact Info</h1>
-                <a href="#"><i class="fa-solid fa-phone"></i>+94 12 345 6789</a>
-                <a href="#"><i class="fa-solid fa-phone"></i>+94 32 444 699</a>
-                <a href="#"><i class="fa-solid fa-envelope"></i>bookstore123@gmail.com</a>
-                
-            </div>
-
-            <div class="tag">
-                <h1>Follow Us</h1>
-                <div class="social_link">
-                    <i class="fa-brands fa-facebook-f"></i>
-                    <i class="fa-brands fa-instagram"></i>
-                    <i class="fa-brands fa-twitter"></i>
-                    <i class="fa-brands fa-linkedin-in"></i>
-                </div>
-                
-            </div>
-
-            <div class="tag">
-                <h1>Newsletter</h1>
-                <div class="search_bar">
-                    <input type="text" placeholder="You email id here">
-                    <button type="submit">Subscribe</button>
-                </div>                
-            </div>            
-            
-        </div>
-
-        <p class="end">Design By<span><i class="fa-solid fa-face-grin"></i> WT Master Code</span></p>
-
-    </footer>
-
-
-
-
-
+    <div class="feature-item">
+        <i class="fas fa-credit-card"></i> <!-- Updated to 'fa-credit-card' for a more relevant payment icon -->
+        <p>Cash on Delivery</p>
+    </div>
+    <div class="feature-item">
+        <i class="fas fa-thumbs-up"></i> <!-- Updated to 'fa-thumbs-up' for a more positive feedback icon -->
+        <p>Original Products</p>
+    </div>
+    <div class="feature-item">
+        <i class="fas fa-undo-alt"></i> <!-- Updated to 'fa-undo-alt' for a clearer replacement icon -->
+        <p>Easy Replacement</p>
+    </div>
+</section>
     
+
+    <!---- crucial setion start ------>
+    <section class="crucial">
+        <div class="container">
+            <h3>Insights from Top PageTurner eBooks</h3>
+            <p>Delve into the key insights and strategies from our most popular eBooks. These valuable takeaways are designed to enhance your affiliate marketing skills and boost your online presence.</p>
+            <div class="topics">
+                <div class="col-2">
+                    <i class='bx bx-check'></i>
+                    <div class="paragraph">
+                        <h4>Effective Promotion Techniques</h4>
+                        <p>Master the art of promoting products and services to drive traffic and increase conversions.</p>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <i class='bx bx-check'></i>
+                    <div class="paragraph">
+                        <h4>Optimized Content Creation</h4>
+                        <p>Learn how to create engaging and optimized content that attracts and retains your target audience.</p>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <i class='bx bx-check'></i>
+                    <div class="paragraph">
+                        <h4>Data-Driven Strategies</h4>
+                        <p>Utilize data and analytics to make informed decisions and refine your marketing strategies.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+
+      
+
+
+
+
+
+    <!---- footer section start -->
+    <section class="footer">
+        <div class="content">
+            <img src="./images/logo/black.jpeg" alt="">
+            <div class="col-9">
+                <span>Follow our blog for updates and tips</span>
+                <div class="inputBox">
+                    <input type="email" placeholder="enteryour email">
+                    <button>subscribe</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-10">
+            <span>&copy; 2024 PageTurner. All Rights Reserved.</span>
+            <div class="social">
+                <i class='bx bxl-facebook' ></i>
+                <i class='bx bxl-twitter' ></i>
+                <i class='bx bxl-instagram' ></i>
+                <i class='bx bxl-youtube' ></i>
+                <i class='bx bxl-tiktok' ></i>
+            </div>
+        </div>
+    </section>
+    
+
+    <!---- script coding -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const dropdownToggles = document.querySelectorAll('.dropdown-toggle');
+            const menuBar = document.getElementById('menuBar');
+            const closeButton = document.getElementById('close');
+            const navbar = document.querySelector('.navbar');
+        
+            // Toggle dropdown menus
+            dropdownToggles.forEach(toggle => {
+                toggle.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const parentDropdown = this.parentElement;
+                    parentDropdown.classList.toggle('active');
+                });
+            });
+        
+            // Toggle responsive menu
+            menuBar.addEventListener('click', function() {
+                navbar.classList.add('active');
+            });
+        
+            closeButton.addEventListener('click', function() {
+                navbar.classList.remove('active');
+            });
+        });
+        </script>
+        
 </body>
 </html>

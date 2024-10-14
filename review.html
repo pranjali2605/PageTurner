@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PageTurner Review Page</title>
+  <link rel="stylesheet" href="./review.css"> <!-- Link to your CSS file -->
+  <link rel="shortcut icon" href="./BW Stamp (1).png">
+  <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.0.7/css/boxicons.min.css">
+
+  <style>
+    body {
+    font-family: Arial, sans-serif;
+    background-image: url(./1326370.png);
+    margin: 0;
+    padding: 0;
+  }
+  .container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 120px;
+  }
+  h1 {
+    text-align: center;
+    color: #333;
+  }
+  .review-form {
+    margin-bottom: 40px;
+  }
+  .review-form h2 {
+    margin-bottom: 20px;
+  }
+  .review-form input[type="text"],
+  .review-form textarea {
+    width: 95%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  .review-form button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  .review-form button:hover {
+    background-color: #555;
+  }
+  .reviews {
+    margin-top: 40px;
+  }
+  .review {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+  }
+  .review h3 {
+    margin: 0 0 5px;
+  }
+  .review p {
+    margin: 0;
+  }
+
+  .pannel {
+    display: none;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+.button {
+    cursor: pointer;
+}
+
+.according {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+  </style>
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="main-header">
+            <div class="logo">
+                <img src="./images/logo/black.jpeg" alt="PageTurner Logo">
+            </div>
+            <nav class="navbar">
+                <a href="./index.html">Home</a>
+                <a href="./about.html">About</a>
+                <a href="./review.html">Reviews</a>
+                <div class="dropdown">
+                    <a href="#" class="dropdown-toggle">eBooks <i class='bx bx-chevron-down'></i></a>
+                    <div class="dropdown-menu">
+                        <a href="./ebooks.html">All eBooks</a>
+                        <a href="./new-releases.html">New Releases</a>
+                        <a href="./bestsellers.html">Bestsellers</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a href="#" class="dropdown-toggle">Shop-now <i class='bx bx-chevron-down'></i></a>
+                    <div class="dropdown-menu">
+                        <a href="./shopnow.html">Shop All</a>
+                        <a href="./sale.html">Sale Items</a>
+                        <a href="./new-arrivals.html">New Arrivals</a>
+                    </div>
+                </div>
+                <div class="search-bar">
+                    <input type="text" placeholder="Search...">
+                    <button class="search-btn"><i class='bx bx-search'></i></button>
+                </div>
+                <a href="./login.html" class="login-btn"><i class='bx bx-user'></i> Login</a>
+                <a href="./shopnow.html" class="shopping-cart"><i class='bx bx-cart'></i></a>
+                <i class='bx bx-x' id="close"></i>
+            </nav>
+            <i class='bx bx-menu' id="menuBar" style="color: white;"></i>
+
+        </div>
+    </header>
+
+    <div class="books">
+  <div class="container" style="background-image: url(./images/background/bg-4.jpg);">
+    <h1>Bookstore Reviews</h1>
+
+    <!-- Review Form -->
+    <div class="review-form">
+      <h2>Leave a Review</h2>
+      <form id="reviewForm">
+        <input type="text" id="name" placeholder="Your Name" required>
+        <input type="text" id="bookTitle" placeholder="Book Title" required>
+        <textarea id="reviewText" rows="5" placeholder="Your Review" required></textarea>
+        <button type="submit">Submit Review</button>
+      </form>
+    </div>
+
+    <!-- Display Reviews -->
+    <div class="reviews" id="reviews">
+      <h2>Customer Reviews</h2>
+      <!-- Reviews will be dynamically added here -->
+    </div>
+  </div>
+</div>
+  <div class="review" id="reviews">
+    <div class="main-topic">
+        <h3>Book Reviews</h3>
+        <p>Discover what readers are saying about our latest books. Read reviews from avid readers and get insights into the best books available at PageTurner.</p>
+    </div>
+    <div class="main-review" id="faqs">
+        <div class="col-8">
+            <div class="button" onclick="toggleAccordion(this)">
+                <span class="according">Why should I explore strategic planning books?</span>
+                <i class='bx bx-plus'></i>
+            </div>
+            <div class="pannel" style="display: none;">
+                <p>Strategic planning books provide essential frameworks for business growth and decision-making. By exploring these books, you can gain valuable insights into how to align your team with long-term goals, optimize resources, and navigate challenges effectively.</p>
+            </div>
+        </div>
+        <div class="col-8">
+            <div class="button" onclick="toggleAccordion(this)">
+                <span class="according">How can I find books that match my growth strategies?</span>
+                <i class='bx bx-plus'></i>
+            </div>
+            <div class="pannel" style="display: none;">
+                <p>At PageTurner, you can use our curated lists and personalized recommendations to find books tailored to your growth strategies. Whether you're focusing on personal development, business expansion, or team empowerment, we have a selection that aligns with your objectives.</p>
+            </div>
+        </div>
+        <div class="col-8">
+            <div class="button" onclick="toggleAccordion(this)">
+                <span class="according">Can I share my thoughts on a book I recently read?</span>
+                <i class='bx bx-plus'></i>
+            </div>
+            <div class="pannel" style="display: none;">
+                <p>Absolutely! PageTurner encourages readers to share their insights. You can submit your book review through our "Share Your Review" section. Your feedback helps other readers make informed decisions and contributes to our community of book lovers.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+  <script>
+    document.getElementById('reviewForm').addEventListener('submit', function(event) {
+      event.preventDefault();
+
+      // Get form values
+      const name = document.getElementById('name').value;
+      const bookTitle = document.getElementById('bookTitle').value;
+      const reviewText = document.getElementById('reviewText').value;
+
+      // Create a new review element
+      const review = document.createElement('div');
+      review.classList.add('review');
+      review.innerHTML = `
+        <h3>${bookTitle}</h3>
+        <p><strong>Reviewed by:</strong> ${name}</p>
+        <p>${reviewText}</p>
+      `;
+
+      // Add the new review to the reviews container
+      document.getElementById('reviews').appendChild(review);
+
+      // Clear the form
+      document.getElementById('reviewForm').reset();   });
+
+      /*------------------------------------------faq--------------------*/
+
+      // FAQ accordion functionality
+      function toggleAccordion(element) {
+    const panel = element.nextElementSibling;
+    const icon = element.querySelector('i');
+
+    if (panel.style.display === "none" || panel.style.display === "") {
+        panel.style.display = "block";
+        icon.classList.remove('bx-plus');
+        icon.classList.add('bx-minus');
+    } else {
+        panel.style.display = "none";
+        icon.classList.remove('bx-minus');
+        icon.classList.add('bx-plus');
+    }
+}
+
+
+ 
+  </script>
+</body>
+</html>
