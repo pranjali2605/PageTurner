@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PageTurner</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./ebooks.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.0.7/css/boxicons.min.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="main-header">
+            <div class="logo">
+                <img src="./images/logo/black.jpeg" alt="PageTurner Logo">
+            </div>
+            <nav class="navbar">
+                <a href="./index.html">Home</a>
+                <a href="./about.html">About</a>
+                <a href="./review.html">Reviews</a>
+                <div class="dropdown">
+                    <a href="#" class="dropdown-toggle">eBooks <i class='bx bx-chevron-down'></i></a>
+                    <div class="dropdown-menu">
+                        <a href="./ebooks.html">All eBooks</a>
+                        <a href="./new-releases.html">New Releases</a>
+                        <a href="./bestsellers.html">Bestsellers</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a href="#" class="dropdown-toggle">Shop-now <i class='bx bx-chevron-down'></i></a>
+                    <div class="dropdown-menu">
+                        <a href="./shopnow.html">Shop All</a>
+                        <a href="./sale.html">Sale Items</a>
+                        <a href="./new-arrivals.html">New Arrivals</a>
+                    </div>
+                </div>
+                <div class="search-bar">
+                    <input type="text" placeholder="Search..." id="searchInput">
+                    <button class="search-btn" onclick="searchBooks()"><i class='bx bx-search'></i></button>
+                </div>
+                
+                <a href="./login.html" class="login-btn"><i class='bx bx-user'></i> Login</a>
+                <a href="./shopnow.html" class="shopping-cart"><i class='bx bx-cart'></i></a>
+                <i class='bx bx-x' id="close"></i>
+            </nav>
+            <i class='bx bx-menu' id="menuBar" style="color: white;"></i>
+        </div>
+    </header>
+
+    <section class="books" id="books" style="padding-top: 100px;">
+        <div class="main-topic">
+            <h2>Explore Our Free eBooks</h2>
+            <p>Discover a wide range of free eBooks available for download. Whether you're looking to improve your business, enhance your skills, or just enjoy a good read, we've got you covered.</p>
+        </div>
+        <div class="book-content" id="bookContent">
+            <!-- Books will be dynamically loaded here from JSON -->
+        </div>
+        <div class="button" style="text-align: center;">
+            <button id="loadMore" onclick="loadMoreBooks()">Load More eBooks</button>
+            <div class="loading-spinner" id="loadingSpinner"></div>
+        </div>
+        
+        
+    </section>
+
+    <script src="./ebooks.js"></script>
+</body>
+
+</html>

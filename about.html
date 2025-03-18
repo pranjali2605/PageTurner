@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - PageTurner</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.0.7/css/boxicons.min.css">
+    <link rel="stylesheet" href="./style.css">
+
+    <style>
+        body {
+            background-color:#343a40;
+            color: black(223, 118, 58);
+            font-family: 'Arial', sans-serif;
+        }
+
+        h1 {
+            font-family: 'Georgia', serif;
+            color:white;
+
+        } 
+        h2{
+            font-family: 'Georgia', serif;
+            color: #ec9748;
+        }
+         h3 {
+            font-family: 'Georgia', serif;
+            color:black;
+        }
+
+        .container {
+            max-width: 1200px;
+        }
+
+        .lead {
+            font-size: 1.2rem;
+            font-weight: 300;
+        }
+
+        .card-custom {
+            background-color:rgb(218, 141, 64);
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin-bottom: 30px;
+            transition: transform 0.3s ease;
+        }
+
+        .card-custom:hover {
+            transform: translateY(-10px);
+        }
+
+        .card-custom h3 {
+            font-size: 1.5rem;
+            margin-top: 15px;
+        }
+
+        .card-custom p {
+            font-size: 1rem;
+            margin-top: 10px;
+        }
+
+        .icon-circle {
+            background-color: #fff;
+            border-radius: 50%;
+            padding: 10px;
+            display: inline-block;
+            margin-bottom: 15px;
+        }
+
+        .icon-circle img {
+            width: 50px;
+            height: 50px;
+        }
+
+        .right-image {
+            margin-top: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            height: auto;
+        }
+
+        .right-content {
+            margin-top: 30px;
+            color:white ;
+        }
+
+        @media (min-width: 768px) {
+            .right-content {
+                display: flex;
+                align-items: center;
+            }
+
+            .right-content .text-content {
+                flex: 1;
+                color: #fff;
+            }
+
+            .right-content .image-content {
+                flex: 1;
+                text-align: right;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="main-header">
+            <div class="logo">
+                <img src="./images/logo/black.jpeg" alt="PageTurner Logo">
+            </div>
+            <nav class="navbar">
+                <a href="./index.html">Home</a>
+                <a href="./about.html">About</a>
+                <a href="./review.html">Reviews</a>
+                <div class="dropdown">
+                    <a href="#" class="dropdown-toggle">eBooks <i class='bx bx-chevron-down'></i></a>
+                    <div class="dropdown-menu">
+                        <a href="./ebooks.html">All eBooks</a>
+                        <a href="./new-releases.html">New Releases</a>
+                        <a href="./bestsellers.html">Bestsellers</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a href="#" class="dropdown-toggle">Shop-now <i class='bx bx-chevron-down'></i></a>
+                    <div class="dropdown-menu">
+                        <a href="./shopnow.html">Shop All</a>
+                        <a href="./sale.html">Sale Items</a>
+                        <a href="./new-arrivals.html">New Arrivals</a>
+                    </div>
+                </div>
+                <div class="search-bar">
+                    <input type="text" placeholder="Search...">
+                    <button class="search-btn"><i class='bx bx-search'></i></button>
+                </div>
+                <a href="./login.html" class="login-btn"><i class='bx bx-user'></i> Login</a>
+                <a href="./shopnow.html" class="shopping-cart"><i class='bx bx-cart'></i></a>
+                <i class='bx bx-x' id="close"></i>
+            </nav>
+            <i class='bx bx-menu' id="menuBar" style="color: white;"></i>
+
+        </div>
+    </header>
+
+    <div class="container mt-5" style="padding-top: 100px;">
+        <h1 class="text-center mb-4">PageTurner</h1>
+        <h2 class="lead text-center">Welcome to PageTurner, your number one source for all things books. We’re dedicated to giving you the very best of literature, with a focus on variety, quality, and customer service.</h2>
+
+        <div class="mission mt-5 text-center">
+            <h1 class="text-center">Our Mission</h1>
+            <h2 class="text-center">Our mission is to bring the world of books closer to you, no matter where you are. We believe in the power of stories and knowledge to transform lives, and we strive to make the joy of reading accessible to everyone.</h2>
+        </div>
+
+        <div class="row mt-5">
+            <div class="col-md-6">
+                <div class="card-custom text-center">
+                    <div class="icon-circle">
+                        <img src="https://bookscape.com/_next/static/media/pricing.73632aab.svg" alt="Personalization">
+                    </div>
+                    <h3>Competitive pricing</h3>
+                    <p>Discover your favorite books at unbeatable prices, making reading affordable. We regularly match prices with other retailers to ensure that you are getting the best deal on your purchases.</p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card-custom text-center">
+                    <div class="icon-circle">
+                        <img src="https://bookscape.com/_next/static/media/your-bookshelf.d1a1b215.svg" alt="Your Bookshelf">
+                    </div>
+                    <h3>Your Bookshelf</h3>
+                    <p>We offer an exclusive space to track books you want to read, are reading, or have read - even monitor your reading progress.</p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card-custom text-center">
+                    <div class="icon-circle">
+                        <img src="https://bookscape.com/_next/static/media/book-guarantee.83c144d7.svg" alt="Powerful Search">
+                    </div>
+                    <h3>Genuine book guarantee</h3>
+                    <p>By working directly with the publishers, we offer the highest quality and most up-to-date books and latest releases that are free from piracy and other unethical practices. Every book sold on Bookscape is 100% genuine and freshly minted right before we send it to you.</p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card-custom text-center">
+                    <div class="icon-circle">
+                        <img src="https://bookscape.com/_next/static/media/dynamic-catalogue.0f37134e.svg" alt="Rich Previews">
+                    </div>
+                    <h3>Dynamic catalogue</h3>
+                    <p>We make sure to regularly add new titles and publishers to our constantly evolving catalogue of books ensuring your next right book is just a click away</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="right-content mt-5">
+            <div class="text-content">
+                <h1>Not Your Average Online Bookstore</h1>
+                <p>We curate a wide range of books that cater to all interests and preferences, offering features like personalized recommendations and reading lists. We are committed to providing excellent customer service and support.</p>
+            </div>
+            <div class="image-content">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-7dyuRlpNeBT-6nxCOjX9RluEvKz695yVaQ&s" alt="Bookshelf Image" class="right-image">
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+</body>
+</html>

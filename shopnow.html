@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Store</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.0.7/css/boxicons.min.css">
+        
+</head>
+<body background-color: #f8f9fa;>
+    <header class="header">
+        <div class="main-header">
+            <div class="logo">
+                <img src="./images/logo/black.jpeg" alt="PageTurner Logo">
+            </div>
+            <nav class="navbar">
+                <a href="./index.html">Home</a>
+                <a href="#about">About</a>
+                <a href="./review.html">Reviews</a>
+                
+                <div class="dropdown">
+                    <a href="#" class="dropdown-toggle">eBooks <i class='bx bx-chevron-down'></i></a>
+                    <div class="dropdown-menu">
+                        <a href="./ebooks.html">All eBooks</a>
+                        <a href="./new-releases.html">New Releases</a>
+                        <a href="./bestsellers.html">Bestsellers</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a href="#" class="dropdown-toggle">Shop-now <i class='bx bx-chevron-down'></i></a>
+                    <div class="dropdown-menu">
+                        <a href="./shopnow.html">Shop All</a>
+                        <a href="./sale.html">Sale Items</a>
+                        <a href="./new-arrivals.html">New Arrivals</a>
+                    </div>
+                </div>
+                <div class="search-bar">
+                    <input type="text" id="search-bar"placeholder="Search...">
+                    <button class="search-btn"><i class='bx bx-search'></i></button>
+                </div>
+                <a href="./login.html" class="login-btn"><i class='bx bx-user'></i> Login</a>
+                <a id="cart-btn"class="shopping-cart"type="button"><i class='bx bx-cart'></i></a>
+                
+                <i class='bx bx-x' id="close"></i>
+            </nav>
+            <i class='bx bx-menu' id="menuBar" style="color: white;"></i>
+        </div>
+    </header>
+
+    <section id="intro"style="padding-top: 100px;">
+        <h2>Welcome to My Book Store</h2>
+        <p>Explore a vast collection of books across various genres. Discover your next favorite read!</p>
+    </section>
+
+    <section id="books">
+        <!-- Book 1 -->
+        <div class="book" id="book1" style="display: flex; flex-direction: column; justify-content: space-between; width: 200px; padding: 10px; border: 1px solid #ddd; border-radius: 5px; text-align: center; background-color: #f9f9f9; margin-bottom: 20px;">
+            <img src="https://divbyzero.com/wp-content/uploads/2024/01/Atomic-Habits.png.webp" alt="Book 1" style="width: 100%; height: auto; border-radius: 5px;">
+            <h4 style="font-size: 1.2em; margin: 10px 0;">Atomic Habits</h4>
+            <div class="book-footer" style="display: flex; flex-direction: column; align-items: center; margin-top: auto;">
+                <p class="price" style="font-size: 1.1em; margin-bottom: 10px; color: #333;">₹750.00</p>
+                <button class="btn" onclick="addToCart({name: 'Atomic Habits', price: 750.00, image: 'https://divbyzero.com/wp-content/uploads/2024/01/Atomic-Habits.png.webp'})" style="padding: 8px 15px; background-color: #ff7f50; color: white; border: none; cursor: pointer; border-radius: 5px;">Add to Cart</button>
+            </div>
+        </div>
+    
+        <!-- Book 2 -->
+        <div class="book" id="book2" style="display: flex; flex-direction: column; justify-content: space-between; width: 200px; padding: 10px; border: 1px solid #ddd; border-radius: 5px; text-align: center; background-color: #f9f9f9; margin-bottom: 20px;">
+            <img src="https://divbyzero.com/wp-content/uploads/2024/01/feel-good-productivity-378x580.jpg.webp" alt="Book 2" style="width: 100%; height: auto; border-radius: 5px;">
+            <h4 style="font-size: 1.2em; margin: 10px 0;">Feel Good Productivity</h4>
+            <div class="book-footer" style="display: flex; flex-direction: column; align-items: center; margin-top: auto;">
+                <p class="price" style="font-size: 1.1em; margin-bottom: 10px; color: #333;">₹1050.00</p>
+                <button class="btn" onclick="addToCart({name: 'Feel Good Productivity', price: 1050.00, image: 'https://divbyzero.com/wp-content/uploads/2024/01/feel-good-productivity-378x580.jpg.webp'})" style="padding: 8px 15px; background-color: #ff7f50; color: white; border: none; cursor: pointer; border-radius: 5px;">Add to Cart</button>
+            </div>
+        </div>
+    
+        <!-- Book 3 -->
+        <div class="book" id="book3" style="display: flex; flex-direction: column; justify-content: space-between; width: 200px; padding: 10px; border: 1px solid #ddd; border-radius: 5px; text-align: center; background-color: #f9f9f9; margin-bottom: 20px;">
+            <img src="https://divbyzero.com/wp-content/uploads/2024/01/how-to-be-stoic-386x580.png.webp" alt="Book 3" style="width: 100%; height: auto; border-radius: 5px;">
+            <h4 style="font-size: 1.2em; margin: 10px 0;">How to Be Stoic</h4>
+            <div class="book-footer" style="display: flex; flex-direction: column; align-items: center; margin-top: auto;">
+                <p class="price" style="font-size: 1.1em; margin-bottom: 10px; color: #333;">₹600.00</p>
+                <button class="btn" onclick="addToCart({name: 'How to Be Stoic', price: 600.00, image: 'https://divbyzero.com/wp-content/uploads/2024/01/how-to-be-stoic-386x580.png.webp'})" style="padding: 8px 15px; background-color: #ff7f50; color: white; border: none; cursor: pointer; border-radius: 5px;">Add to Cart</button>
+            </div>
+        </div>
+    
+        <!-- Book 4 -->
+        <div class="book" id="book4" style="display: flex; flex-direction: column; justify-content: space-between; width: 200px; padding: 10px; border: 1px solid #ddd; border-radius: 5px; text-align: center; background-color: #f9f9f9; margin-bottom: 20px;">
+            <img src="https://divbyzero.com/wp-content/uploads/2024/01/The-7-Habits-of-highly-effective-people.png.webp" alt="Book 4" style="width: 100%; height: auto; border-radius: 5px;">
+            <h4 style="font-size: 1.2em; margin: 10px 0;">The 7 Habits of Highly Effective People</h4>
+            <div class="book-footer" style="display: flex; flex-direction: column; align-items: center; margin-top: auto;">
+                <p class="price" style="font-size: 1.1em; margin-bottom: 10px; color: #333;">₹855.00</p>
+                <button class="btn" onclick="addToCart({name: 'The 7 Habits of Highly Effective People', price: 855.00, image: 'https://divbyzero.com/wp-content/uploads/2024/01/The-7-Habits-of-highly-effective-people.png.webp'})" style="padding: 8px 15px; background-color: #ff7f50; color: white; border: none; cursor: pointer; border-radius: 5px;">Add to Cart</button>
+            </div>
+        </div>
+    
+        <!-- Book 5 -->
+        <div class="book" id="book5" style="display: flex; flex-direction: column; justify-content: space-between; width: 200px; padding: 10px; border: 1px solid #ddd; border-radius: 5px; text-align: center; background-color: #f9f9f9; margin-bottom: 20px;">
+            <img src="https://divbyzero.com/wp-content/uploads/2024/01/Awaken-the-Giant-Within.png.webp" alt="Book 5" style="width: 100%; height: auto; border-radius: 5px;">
+            <h4 style="font-size: 1.2em; margin: 10px 0;">Awaken the Giant Within</h4>
+            <div class="book-footer" style="display: flex; flex-direction: column; align-items: center; margin-top: auto;">
+                <p class="price" style="font-size: 1.1em; margin-bottom: 10px; color: #333;">₹450.00</p>
+                <button class="btn" onclick="addToCart({name: 'Awaken the Giant Within', price: 450.00, image: 'https://divbyzero.com/wp-content/uploads/2024/01/Awaken-the-Giant-Within.png.webp'})" style="padding: 8px 15px; background-color: #ff7f50; color: white; border: none; cursor: pointer; border-radius: 5px;">Add to Cart</button>
+            </div>
+        </div>
+        
+
+    <!-- Book 7 -->
+    <div class="book" id="book7" style="display: flex; flex-direction: column; justify-content: space-between; width: 200px; padding: 10px; border: 1px solid #ddd; border-radius: 5px; text-align: center; background-color: #f9f9f9; margin-bottom: 20px;">
+        <img src="https://divbyzero.com/wp-content/uploads/2024/01/The-Power-of-Habit.png.webp" alt="Book 7" style="width: 100%; height: auto; border-radius: 5px;">
+        <h4 style="font-size: 1.2em; margin: 10px 0;">The Power of Habit</h4>
+        <div class="book-footer" style="display: flex; flex-direction: column; align-items: center; margin-top: auto;">
+            <p class="price" style="font-size: 1.1em; margin-bottom: 10px; color: #333;">₹799.00</p>
+            <button class="btn" onclick="addToCart({name: 'The Power of Habit', price: 799.00, image: 'https://divbyzero.com/wp-content/uploads/2024/01/The-Power-of-Habit.png.webp'})" style="padding: 8px 15px; background-color: #ff7f50; color: white; border: none; cursor: pointer; border-radius: 5px;">Add to Cart</button>
+        </div>
+    </div>
+
+    <!-- Book 8 -->
+    <div class="book" id="book8" style="display: flex; flex-direction: column; justify-content: space-between; width: 200px; padding: 10px; border: 1px solid #ddd; border-radius: 5px; text-align: center; background-color: #f9f9f9; margin-bottom: 20px;">
+        <img src="https://divbyzero.com/wp-content/uploads/2024/01/Thinking-Fast-and-Slow.png.webp" alt="Book 8" style="width: 100%; height: auto; border-radius: 5px;">
+        <h4 style="font-size: 1.2em; margin: 10px 0;">Thinking, Fast and Slow</h4>
+        <div class="book-footer" style="display: flex; flex-direction: column; align-items: center; margin-top: auto;">
+            <p class="price" style="font-size: 1.1em; margin-bottom: 10px; color: #333;">₹950.00</p>
+            <button class="btn" onclick="addToCart({name: 'Thinking, Fast and Slow', price: 950.00, image: 'https://divbyzero.com/wp-content/uploads/2024/01/Thinking-Fast-and-Slow.png.webp'})" style="padding: 8px 15px; background-color: #ff7f50; color: white; border: none; cursor: pointer; border-radius: 5px;">Add to Cart</button>
+        </div>
+    </div>
+    <div class="book" id="book12" style="display: flex; flex-direction: column; justify-content: space-between; width: 200px; padding: 10px; border: 1px solid #ddd; border-radius: 5px; text-align: center; background-color: #f9f9f9; margin-bottom: 20px;">
+        <img src="https://divbyzero.com/wp-content/uploads/2024/01/Awaken-the-Giant-Within.png.webp" alt="Book 5" style="width: 100%; height: auto; border-radius: 5px;">
+        <h4 style="font-size: 1.2em; margin: 10px 0;">Awaken the Giant Within</h4>
+        <div class="book-footer" style="display: flex; flex-direction: column; align-items: center; margin-top: auto;">
+            <p class="price" style="font-size: 1.1em; margin-bottom: 10px; color: #333;">₹450.00</p>
+            <button class="btn" onclick="addToCart({name: 'Awaken the Giant Within', price: 450.00, image: 'https://divbyzero.com/wp-content/uploads/2024/01/Awaken-the-Giant-Within.png.webp'})" style="padding: 8px 15px; background-color: #ff7f50; color: white; border: none; cursor: pointer; border-radius: 5px;">Add to Cart</button>
+        </div>
+    </div>
+    <div class="book" id="book9" style="display: flex; flex-direction: column; justify-content: space-between; width: 200px; padding: 10px; border: 1px solid #ddd; border-radius: 5px; text-align: center; background-color: #f9f9f9; margin-bottom: 20px;">
+        <img src="https://divbyzero.com/wp-content/uploads/2024/01/feel-good-productivity-378x580.jpg.webp" alt="Book 2" style="width: 100%; height: auto; border-radius: 5px;">
+        <h4 style="font-size: 1.2em; margin: 10px 0;">Feel Good Productivity</h4>
+        <div class="book-footer" style="display: flex; flex-direction: column; align-items: center; margin-top: auto;">
+            <p class="price" style="font-size: 1.1em; margin-bottom: 10px; color: #333;">₹1050.00</p>
+            <button class="btn" onclick="addToCart({name: 'Feel Good Productivity', price: 1050.00, image: 'https://divbyzero.com/wp-content/uploads/2024/01/feel-good-productivity-378x580.jpg.webp'})" style="padding: 8px 15px; background-color: #ff7f50; color: white; border: none; cursor: pointer; border-radius: 5px;">Add to Cart</button>
+        </div>
+    </div>
+
+    <!-- Book 3 -->
+    <div class="book" id="book10" style="display: flex; flex-direction: column; justify-content: space-between; width: 200px; padding: 10px; border: 1px solid #ddd; border-radius: 5px; text-align: center; background-color: #f9f9f9; margin-bottom: 20px;">
+        <img src="https://divbyzero.com/wp-content/uploads/2024/01/how-to-be-stoic-386x580.png.webp" alt="Book 3" style="width: 100%; height: auto; border-radius: 5px;">
+        <h4 style="font-size: 1.2em; margin: 10px 0;">How to Be Stoic</h4>
+        <div class="book-footer" style="display: flex; flex-direction: column; align-items: center; margin-top: auto;">
+            <p class="price" style="font-size: 1.1em; margin-bottom: 10px; color: #333;">₹600.00</p>
+            <button class="btn" onclick="addToCart({name: 'How to Be Stoic', price: 600.00, image: 'https://divbyzero.com/wp-content/uploads/2024/01/how-to-be-stoic-386x580.png.webp'})" style="padding: 8px 15px; background-color: #ff7f50; color: white; border: none; cursor: pointer; border-radius: 5px;">Add to Cart</button>
+        </div>
+    </div>
+
+    <!-- Book 4 -->
+    <div class="book" id="book11" style="display: flex; flex-direction: column; justify-content: space-between; width: 200px; padding: 10px; border: 1px solid #ddd; border-radius: 5px; text-align: center; background-color: #f9f9f9; margin-bottom: 20px;">
+        <img src="https://divbyzero.com/wp-content/uploads/2024/01/The-7-Habits-of-highly-effective-people.png.webp" alt="Book 4" style="width: 100%; height: auto; border-radius: 5px;">
+        <h4 style="font-size: 1.2em; margin: 10px 0;">The 7 Habits of Highly Effective People</h4>
+        <div class="book-footer" style="display: flex; flex-direction: column; align-items: center; margin-top: auto;">
+            <p class="price" style="font-size: 1.1em; margin-bottom: 10px; color: #333;">₹855.00</p>
+            <button class="btn" onclick="addToCart({name: 'The 7 Habits of Highly Effective People', price: 855.00, image: 'https://divbyzero.com/wp-content/uploads/2024/01/The-7-Habits-of-highly-effective-people.png.webp'})" style="padding: 8px 15px; background-color: #ff7f50; color: white; border: none; cursor: pointer; border-radius: 5px;">Add to Cart</button>
+        </div>
+    </div>
+
+    
+    
+    
+    </section>
+    
+
+    <div id="cart-modal" class="cart-modal">
+        <div class="cart-content">
+            <span class="close" id="close-cart">&times;</span>
+            <h2>Shopping Cart</h2>
+            <div id="cart-items"></div>
+            <div id="cart-total"></div>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <section class="footer">
+
+        <div class="box-container">
+    
+            <div class="box">
+                <h3>Our Locations</h3>
+                <a href="#"> <i class="fas fa-map-marker-alt"></i> India </a>
+                <a href="#"> <i class="fas fa-map-marker-alt"></i> USA </a>
+            </div>
+    
+            <div class="box">
+                <h3>Quick Links</h3>
+                <a href="./index.html"> <i class="fas fa-arrow-right"></i> Home </a>
+                <a href="#"> <i class="fas fa-arrow-right"></i> Featured </a>
+                <a href="#"> <i class="fas fa-arrow-right"></i> Category </a>
+                <a href="#"> <i class="fas fa-arrow-right"></i> Reviews </a>
+            </div>
+    
+            <div class="box">
+                <h3>Extra Links</h3>
+                <a href="#"> <i class="fas fa-arrow-right"></i> Account Info </a>
+                <a href="#"> <i class="fas fa-arrow-right"></i> Ordered Items </a>
+                <a href="#"> <i class="fas fa-arrow-right"></i> Privacy Policy </a>
+                <a href="#"> <i class="fas fa-arrow-right"></i> Payment Method </a>
+                <a href="#"> <i class="fas fa-arrow-right"></i> Our Services </a>
+            </div>
+    
+            <div class="box">
+                <h3>Contact Info</h3>
+                <a href="#"> <i class="fas fa-phone"></i>+91 1234567890 </a>
+                <a href="#"> <i class="fas fa-envelope"></i> priyanshi123@gmail.com </a>
+                <img src="https://raw.githubusercontent.com/KordePriyanka/Books4MU-Book-Store-Website-/main/image/worldmap.png" class="map" alt="World Map">
+            </div>
+    
+        </div>
+    
+        <div class="share">
+            <a href="#" class="fab fa-facebook-f"></a>
+            <a href="" class="fab fa-twitter"></a>
+            <a href="" class="fab fa-instagram"></a>
+            <a href="" class="fab fa-linkedin"></a>
+        </div>
+    
+        <div class="credit"> Created by <span>Priyanshi</span> &copy; 2024 All Rights Reserved! </div>
+    
+    </section>
+    
+
+    <script src="script.js"></script>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+    <!-- <script>
+        // Shopping Cart Logic
+        let cart = [];
+
+        document.querySelectorAll('.add-to-cart').forEach(button => {
+            button.addEventListener('click', () => {
+                const bookName = button.getAttribute('data-name');
+                const bookPrice = parseFloat(button.getAttribute('data-price'));
+                const item = cart.find(i => i.name === bookName);
+
+                if (item) {
+                    item.quantity++;
+                } else {
+                    cart.push({ name: bookName, price: bookPrice, quantity: 1 });
+                }
+
+                updateCart();
+            });
+        });
+
+        function updateCart() {
+            const cartItemsDiv = document.getElementById('cart-items');
+            cartItemsDiv.innerHTML = '';
+            let total = 0;
+
+            cart.forEach(item => {
+                total += item.price * item.quantity;
+                const cartItem = document.createElement('div');
+                cartItem.classList.add('cart-item');
+                cartItem.innerHTML = `
+                    <span>${item.name} x ${item.quantity}</span>
+                    <span>₹${item.price * item.quantity}</span>
+                    <span class="remove-item" onclick="removeFromCart('${item.name}')">Remove</span>
+                `;
+                cartItemsDiv.appendChild(cartItem);
+            });
+
+            document.getElementById('cart-total').innerText = `Total: ₹${total}`;
+        }
+
+        function removeFromCart(name) {
+            cart = cart.filter(item => item.name !== name);
+            updateCart();
+        }
+
+        document.getElementById('checkout-button').addEventListener('click', () => {
+            if (cart.length === 0) {
+                alert('Your cart is empty!');
+                return;
+            }
+            alert('Proceeding to checkout!');
+            // Here you can add your checkout logic (e.g., redirect to checkout page)
+        });
+    </script> -->
+</body>
+</html>

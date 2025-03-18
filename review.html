@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PageTurner Review Page</title>
+  <link rel="stylesheet" href="./review.css">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="shortcut icon" href="./BW Stamp (1).png">
+  <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.0.7/css/boxicons.min.css">
+</head>
+<body>
+  <header class="header">
+    <div class="main-header">
+      <div class="logo">
+        <img src="./images/logo/black.jpeg" alt="PageTurner Logo">
+      </div>
+      <nav class="navbar">
+        <a href="./index.html">Home</a>
+        <a href="./about.html">About</a>
+        <a href="./review.html">Reviews</a>
+        <div class="dropdown">
+          <a href="#" class="dropdown-toggle">eBooks <i class='bx bx-chevron-down'></i></a>
+          <div class="dropdown-menu">
+            <a href="./ebooks.html">All eBooks</a>
+            <a href="./new-releases.html">New Releases</a>
+            <a href="./bestsellers.html">Bestsellers</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <a href="#" class="dropdown-toggle">Shop-now <i class='bx bx-chevron-down'></i></a>
+          <div class="dropdown-menu">
+            <a href="./shopnow.html">Shop All</a>
+            <a href="./sale.html">Sale Items</a>
+            <a href="./new-arrivals.html">New Arrivals</a>
+          </div>
+        </div>
+        <div class="search-bar">
+          <input type="text" placeholder="Search...">
+          <button class="search-btn" aria-label="Search"><i class='bx bx-search'></i></button>
+        </div>
+        <a href="./login.html" class="login-btn"><i class='bx bx-user'></i> Login</a>
+        <a href="./shopnow.html" class="shopping-cart"><i class='bx bx-cart'></i></a>
+        <i class='bx bx-x' id="close"></i>
+      </nav>
+      <i class='bx bx-menu' id="menuBar" style="color: white;"></i>
+    </div>
+  </header>
+
+  <div class="books">
+    <div class="container" style="background-image: url(./images/background/bg-4.jpg);">
+      <h1>Bookstore Reviews</h1>
+      <!-- Review Form -->
+      <div class="review-form">
+        <h2>Leave a Review</h2>
+        <form id="reviewForm" onsubmit="submitReview(event);">
+          <input type="hidden" id="reviewId">
+          <input type="text" id="name" placeholder="Your Name" required>
+          <input type="text" id="bookTitle" placeholder="Book Title" required>
+          <textarea id="reviewText" rows="5" placeholder="Your Review" required></textarea>
+          <div class="rating">
+              <input type="radio" name="rating" id="star5" value="5"><label for="star5">&#9733;</label>
+              <input type="radio" name="rating" id="star4" value="4"><label for="star4">&#9733;</label>
+              <input type="radio" name="rating" id="star3" value="3"><label for="star3">&#9733;</label>
+              <input type="radio" name="rating" id="star2" value="2"><label for="star2">&#9733;</label>
+              <input type="radio" name="rating" id="star1" value="1"><label for="star1">&#9733;</label>
+          </div>
+          <div class="error-message" id="errorMessage"></div>
+          <button type="submit">Submit Review</button>
+      </form>
+      
+      </div>
+
+      <!-- Display Reviews -->
+      <div class="reviews" id="reviews-container">
+        <h2 onclick="loadReviews()">Customer Reviews</h2>
+        <!-- Reviews will be dynamically added here -->
+      </div>
+    </div>
+  </div>
+
+  <div class="review" id="reviews">
+    <div class="main-topic">
+      <h3>Book Reviews</h3>
+      <p>Discover what readers are saying about our latest books. Read reviews from avid readers and get insights into the best books available at PageTurner.</p>
+    </div>
+    <div class="main-review" id="faqs">
+      <div class="col-8">
+        <div class="button" onclick="toggleAccordion(this)">
+          <span class="according">Why should I explore strategic planning books?</span>
+          <i class='bx bx-plus'></i>
+        </div>
+        <div class="panel" style="display: none;">
+          <p style="color: white;">Strategic planning books provide essential frameworks for business growth and decision-making. By exploring these books, you can gain valuable insights into how to align your team with long-term goals, optimize resources, and navigate challenges effectively.</p>
+        </div>
+      </div>
+      <div class="col-8">
+        <div class="button" onclick="toggleAccordion(this)">
+          <span class="according">How can I find books that match my growth strategies?</span>
+          <i class='bx bx-plus'></i>
+        </div>
+        <div class="panel" style="display: none;">
+          <p style="color: white;">At PageTurner, you can use our curated lists and personalized recommendations to find books tailored to your growth strategies. Whether you're focusing on personal development, business expansion, or team empowerment, we have a selection that aligns with your objectives.</p>
+        </div>
+      </div>
+      <div class="col-8">
+        <div class="button" onclick="toggleAccordion(this)">
+          <span class="according">Can I share my thoughts on a book I recently read?</span>
+          <i class='bx bx-plus'></i>
+        </div>
+        <div class="panel" style="display: none;">
+          <p style="color: white;">Absolutely! PageTurner encourages readers to share their insights. You can submit your book review through our "Share Your Review" section. Your feedback helps other readers make informed decisions and contributes to our community of book lovers.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="./review.js"></script>
+</body>
+</html>

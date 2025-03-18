@@ -1,0 +1,53 @@
+{
+  "reviews": [
+    {
+      "name": "Michael Johnson",
+      "bookTitle": "The Art : Finding Peace in Chaos",
+      "reviewText": "Very insightful and calming. This book beautifully explains the concepts of mindfulness and inner peace through simple yet profound teachings. Highly recommended for anyone looking to find balance.",
+      "rating": "4",
+      "id": "92"
+    },
+    {
+      "id": "1",
+      "name": "Emily Davis",
+      "bookTitle": "Into the Wild: The Untamed Journey of Self-Discovery",
+      "reviewText": "Great adventure book with a lot of life lessons. The author takes you through a journey of self-discovery in the wilderness, exploring the beauty and challenges of nature.",
+      "rating": "3"
+    },
+    {
+      "id": "45",
+      "name": "John Doe",
+      "bookTitle": "Mastering the Mind: A Guide to Mental Fitness",
+      "reviewText": "A comprehensive guide to understanding and improving mental health. The book provides practical exercises and insights for achieving mental clarity and focus.",
+      "rating": "4"
+    },
+    {
+      "id": "76",
+      "name": "Sarah Williams",
+      "bookTitle": "The Last Kingdom: A Tale of Honor and Betrayal",
+      "reviewText": "An epic story set in medieval times, exploring themes of loyalty, honor, and betrayal. The intricate plot and well-developed characters make it an engaging read.",
+      "rating": "5"
+    },
+    {
+      "id": "27",
+      "name": "pranjali",
+      "bookTitle": "world tour",
+      "reviewText": "A captivating tale of space exploration, filled with intriguing characters and thrilling adventures across distant galaxies. A must-read for sci-fi enthusiasts.",
+      "rating": "4"
+    },
+    {
+      "id": "114",
+      "name": "priyanshi",
+      "bookTitle": "world tour",
+      "reviewText": "adventure in peak",
+      "rating": "4"
+    },
+    {
+      "id": "53f5",
+      "name": "pranjali",
+      "bookTitle": "world tour",
+      "reviewText": "good",
+      "rating": "5"
+    }
+  ]
+}

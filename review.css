@@ -1,0 +1,98 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url(./1326370.png);
+    margin: 0;
+    padding: 0;
+  }
+  .container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 120px;
+  }
+  h1 {
+    text-align: center;
+    color: #333;
+  }
+  .review-form {
+    margin-bottom: 40px;
+  }
+  .review-form h2 {
+    margin-bottom: 20px;
+  }
+  .review-form input[type="text"],
+  .review-form textarea {
+    width: 95%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  .review-form button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  .review-form button:hover {
+    background-color: #555;
+  }
+  .error-message {
+    color: red;
+    margin-bottom: 10px;
+  }
+  .reviews {
+    margin-top: 40px;
+  }
+  .review {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+  }
+  .review h3 {
+    margin: 0 0 5px;
+  }
+  .review p {
+    margin: 0;
+  }
+  /* .review p {
+    color: white;
+} */
+  .rating {
+    display: flex;
+    gap: 5px;
+    margin-bottom: 10px;
+  }
+  .rating input {
+    display: none;
+  }
+  .rating label {
+    font-size: 24px;
+    color: #ccc;
+    cursor: pointer;
+  }
+  .rating input:checked ~ label {
+    color: gold;
+  }
+  .rating label:hover,
+  .rating label:hover ~ label {
+    color: gold;
+  }
+
+  .delete-btn {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .delete-btn:hover {
+    background-color: #ff1a1a;
+  }
+  
